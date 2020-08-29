@@ -5,7 +5,7 @@ import RadioButton from './RadioButton';
 
 function Calculator() {
   const [weight, setWeight] = useState(50);
-  const [active, setActive] = useState(false);
+  // const [active, setActive] = useState(false);
   const [skill, setSkill] = useState(0.43);
   const beginner = 0.43;
   const intermediate = 0.38;
