@@ -1,24 +1,21 @@
 import React from 'react';
-import logo from './logo.svg';
+
+import Calculator from './components/Calculator';
 import './App.css';
+import surfboard from './images/surfboard-icon.png';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <Calculator />
+      <div className='box'>
+        <img
+          src={surfboard}
+          alt='surfboard'
+          width='150px;'
+          height='150px;'
+        ></img>
+      </div>
     </div>
   );
 }
