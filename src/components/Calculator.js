@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import RangeSlider from './RangeSlider';
-import RadioButton from './RadioButton';
+import SkillButton from './SkillButton';
 
 function Calculator() {
   const [weight, setWeight] = useState(50);
@@ -30,9 +30,9 @@ function Calculator() {
       <h2>Volume: {(weight * skill).toFixed(2) + 'L'}</h2>
       <h4>Weight: {weight + 'kg'}</h4>
       <RangeSlider value={weight} handler={handleWeight} min='40' />
-      <RadioButton value='beginner' handler={handleButton} />
-      <RadioButton value='intermediate' handler={handleButton} />
-      <RadioButton value='expert' handler={handleButton} />
+      <SkillButton value='beginner' handler={handleButton} />
+      <SkillButton value='intermediate' handler={handleButton} />
+      <SkillButton value='expert' handler={handleButton} />
     </div>
   );
 }
