@@ -1,12 +1,13 @@
 .range-slider {
   -webkit-appearance: none;
   width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
   border-radius: 20px;
   background: #e7e9f2;
   box-shadow: inset 5px 5px 10px #dbdde6, inset -5px -5px 10px #f3f5fe;
   justify-content: space-between;
   outline: none;
-
   -webkit-transition: 0.2s;
   transition: background 0.2s;
 }
@@ -26,7 +27,6 @@
   height: 20px;
   width: 20px;
   border: none;
-
   background: #121111;
   box-shadow: 20px 20px 60px #c5cbcf, -20px -20px 60px #ffffff;
   cursor: pointer;
