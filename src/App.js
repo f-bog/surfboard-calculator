@@ -6,17 +6,21 @@ import surfboard from './images/surfboard-icon.png';
 
 function App() {
   return (
-    <div className='App'>
-      <Calculator />
-      <div className='box'>
-        <img
-          src={surfboard}
-          alt='surfboard'
-          width='150px;'
-          height='150px;'
-        ></img>
+    <>
+      <h1>Surf Board Volume Calculator</h1>
+      <div className='App'>
+        <Calculator />
+
+        <div className='box'>
+          <img
+            src={surfboard}
+            alt='surfboard'
+            width='150px;'
+            height='150px;'
+          ></img>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 

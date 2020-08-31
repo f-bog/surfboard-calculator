@@ -4,8 +4,8 @@ const RangeSlider = (props) => {
   return (
     <input
       className='range-slider'
-      min='1'
-      max='100'
+      min='40'
+      max='110'
       type='range'
       value={props.value}
       onChange={props.handler}

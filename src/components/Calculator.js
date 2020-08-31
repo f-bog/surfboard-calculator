@@ -28,7 +28,7 @@ function Calculator() {
     <div className='controls'>
       <h2>Volume: {(weight * skill).toFixed(2) + 'L'}</h2>
       <h4>Weight: {weight + 'kg'}</h4>
-      <RangeSlider value={weight} handler={handleWeight} min='40' />
+      <RangeSlider value={weight} handler={handleWeight} />
       <SkillButton value='beginner' handler={handleButton} />
       <SkillButton value='intermediate' handler={handleButton} />
       <SkillButton value='expert' handler={handleButton} />
