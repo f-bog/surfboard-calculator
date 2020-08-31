@@ -11,14 +11,7 @@ function App() {
       <div className='App'>
         <Calculator />
 
-        <div className='box'>
-          <img
-            src={surfboard}
-            alt='surfboard'
-            width='150px;'
-            height='150px;'
-          ></img>
-        </div>
+        <img src={surfboard} alt='surfboard' width='70px;' height='70px;'></img>
       </div>
     </>
   );

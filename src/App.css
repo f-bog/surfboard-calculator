@@ -8,11 +8,12 @@
   margin: 50px auto;
   border-radius: 10px;
   background: #e7e9f2;
-  box-shadow: 5px 5px 10px #dbdde6, -5px -5px 10px #f3f5fe;
-  max-width: 1000;
+  box-shadow: inset 5px 5px 10px #dbdde6, inset -5px -5px 10px #f3f5fe;
+  max-width: 1000px;
+  min-width: 60%;
 }
 img {
-  margin: 1rem;
+  margin-top: 1.2rem;
 }
 .box {
   display: flex;
@@ -27,7 +28,7 @@ input.button {
   border: none;
   font-size: 1rem;
   padding: 1rem;
-  margin: 0rem 1rem;
+  margin: 0 1rem;
   border-radius: 10px;
   -webkit-appearance: none;
   -moz-appearance: none;

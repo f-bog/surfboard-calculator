@@ -17,7 +17,7 @@
   border-radius: 20%;
   height: 20px;
   width: 20px;
-  background: #121111;
+  background: #3f4042;
   box-shadow: 20px 20px 60px #c5cbcf, -20px -20px 60px #ffffff;
   cursor: pointer;
 }
@@ -27,7 +27,7 @@
   height: 20px;
   width: 20px;
   border: none;
-  background: #121111;
+  background: #3f4042;
   box-shadow: 20px 20px 60px #c5cbcf, -20px -20px 60px #ffffff;
   cursor: pointer;
   transition: all 0.2s;
@@ -35,5 +35,5 @@
 
 .range-slider::-moz-range-thumb:hover {
   transform: scale(1.2);
-  background: #53c7f0;
+  background: #53f0ce;
 }

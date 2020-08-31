@@ -10,7 +10,7 @@ const SkillButton = (props) => {
         value={props.value}
         onClick={props.handler}
       ></input>
-      {props.value}
+      {props.value.toUpperCase()}
     </label>
   );
 };

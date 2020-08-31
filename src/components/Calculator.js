@@ -26,8 +26,8 @@ function Calculator() {
 
   return (
     <div className='controls'>
-      <h2>Volume: {(weight * skill).toFixed(2) + 'L'}</h2>
-      <h4>Weight: {weight + 'kg'}</h4>
+      <h2>BOARD VOLUME: {(weight * skill).toFixed(2) + 'L'}</h2>
+      <p>YOUR WEIGHT: {weight + 'kg'}</p>
       <RangeSlider value={weight} handler={handleWeight} />
       <SkillButton value='beginner' handler={handleButton} />
       <SkillButton value='intermediate' handler={handleButton} />
