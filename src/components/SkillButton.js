@@ -6,10 +6,11 @@ const SkillButton = (props) => {
       <input
         className='button'
         name='skill'
-        type='button'
+        type='radio'
         value={props.value}
         onClick={props.handler}
       ></input>
+      {props.value}
     </label>
   );
 };
