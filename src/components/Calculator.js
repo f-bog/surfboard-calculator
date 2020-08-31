@@ -5,7 +5,6 @@ import SkillButton from './SkillButton';
 
 function Calculator() {
   const [weight, setWeight] = useState(50);
-  // const [active, setActive] = useState(false);
   const [skill, setSkill] = useState(0.43);
   const beginner = 0.43;
   const intermediate = 0.38;
@@ -26,7 +25,7 @@ function Calculator() {
   };
 
   return (
-    <div>
+    <div className='controls'>
       <h2>Volume: {(weight * skill).toFixed(2) + 'L'}</h2>
       <h4>Weight: {weight + 'kg'}</h4>
       <RangeSlider value={weight} handler={handleWeight} min='40' />
