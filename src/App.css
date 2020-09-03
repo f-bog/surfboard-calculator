@@ -12,32 +12,3 @@
   max-width: 1000px;
   min-width: 60%;
 }
-
-.SkillButton {
-  border: none;
-  font-size: 1rem;
-  padding: 1rem;
-  margin: 0 1rem;
-  border-radius: 10px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
-  background: #e7e9f2;
-  box-shadow: 5px 5px 10px #dbdde6, -5px -5px 10px #f3f5fe;
-  transition: color 0.5s;
-  cursor: pointer;
-}
-label {
-  cursor: pointer;
-}
-label:hover {
-  color: #53f0ce;
-  transition: color 0.2s;
-}
-
-.SkillButton:checked {
-  background: #e7e9f2;
-  box-shadow: inset 5px 5px 10px #dbdde6, inset -5px -5px 10px #f3f5fe;
-}
