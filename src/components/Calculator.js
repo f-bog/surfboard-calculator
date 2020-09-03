@@ -6,7 +6,8 @@ import './Calculator.css';
 
 function Calculator() {
   const [weight, setWeight] = useState(50);
-  const [skill, setSkill] = useState(0.43);
+  const [gf, setGf] = useState('0.43');
+  const [skill, setSkill] = useState('Beginner');
   const beginner = 0.43;
   const intermediate = 0.38;
   const expert = 0.36;
@@ -16,22 +17,25 @@ function Calculator() {
   };
 
   const handleButton = (event) => {
+    let newSkill = event.target.value;
+    setSkill(newSkill[0].toUpperCase() + newSkill.slice(1));
     if (event.target.value === 'beginner') {
-      setSkill(beginner);
+      setGf(beginner);
     } else if (event.target.value === 'intermediate') {
-      setSkill(intermediate);
+      setGf(intermediate);
     } else if (event.target.value === 'expert') {
-      setSkill(expert);
+      setGf(expert);
     }
   };
 
   return (
     <div className='Calculator'>
       <div className='Calculator-details'>
-        <h2>BOARD VOLUME: {(weight * skill).toFixed(1) + 'L'}</h2>
+        <h2>BOARD VOLUME: {(weight * gf).toFixed(1) + 'L'}</h2>
         <p>YOUR WEIGHT: {weight + 'kg'}</p>
+        <p>YOUR SKILL: {skill}</p>
       </div>
-      <img src={surfboard} alt='surfboard' width='70px;' height='70px;'></img>
+      <img src={surfboard} alt='surfboard' width='100px;' height='100px;'></img>
       <div className='Calculator-controls'>
         <RangeSlider value={weight} handler={handleWeight} />
         <SkillButton value='beginner' handler={handleButton} />
