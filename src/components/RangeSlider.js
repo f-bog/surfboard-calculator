@@ -4,7 +4,7 @@ const RangeSlider = (props) => {
   return (
     <label>
       <input
-        className='range-slider'
+        className='RangeSlider'
         min='40'
         max='110'
         type='range'
