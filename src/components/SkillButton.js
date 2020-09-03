@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './SkillButton.css';
 const SkillButton = (props) => {
   return (
     <label>
@@ -8,7 +8,6 @@ const SkillButton = (props) => {
         name='skill'
         type='radio'
         value={props.value}
-        onClick={props.handler}
       ></input>
       {props.value.toUpperCase()}
     </label>
