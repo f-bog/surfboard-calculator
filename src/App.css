@@ -12,9 +12,6 @@
   max-width: 1000px;
   min-width: 60%;
 }
-img {
-  margin-top: 1.2rem;
-}
 
 .SkillButton {
   border: none;
@@ -32,9 +29,15 @@ img {
   transition: color 0.5s;
   cursor: pointer;
 }
+label {
+  cursor: pointer;
+}
+label:hover {
+  color: #53f0ce;
+  transition: color 0.2s;
+}
 
 .SkillButton:checked {
   background: #e7e9f2;
   box-shadow: inset 5px 5px 10px #dbdde6, inset -5px -5px 10px #f3f5fe;
-  color: #53c7f0;
 }
