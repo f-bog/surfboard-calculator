@@ -17,7 +17,8 @@
 label {
   cursor: pointer;
 }
-label:hover {
+label:hover,
+.selected {
   color: #53f0ce;
   transition: color 0.2s;
 }

@@ -18,6 +18,7 @@ function Calculator() {
 
   const handleButton = (event) => {
     let newSkill = event.target.value;
+    console.log(guildFactor);
     setSkill(newSkill[0].toUpperCase() + newSkill.slice(1));
     if (event.target.value === 'beginner') {
       setGuildFactor(beginner);
@@ -38,9 +39,21 @@ function Calculator() {
       <img src={surfboard} alt='surfboard' width='100px;' height='100px;'></img>
       <div className='Calculator-controls'>
         <RangeSlider value={weight} handler={handleWeight} />
-        <SkillButton value='beginner' handler={handleButton} />
-        <SkillButton value='intermediate' handler={handleButton} />
-        <SkillButton value='expert' handler={handleButton} />
+        <SkillButton
+          value='beginner'
+          handler={handleButton}
+          selected={skill === 'Beginner'}
+        />
+        <SkillButton
+          value='intermediate'
+          handler={handleButton}
+          selected={skill === 'Intermediate'}
+        />
+        <SkillButton
+          value='expert'
+          handler={handleButton}
+          selected={skill === 'Expert'}
+        />
       </div>
     </div>
   );
