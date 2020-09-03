@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import surfboard from '../images/surfboard-icon.png';
 import RangeSlider from './RangeSlider';
 import SkillButton from './SkillButton';
 
@@ -26,8 +26,11 @@ function Calculator() {
 
   return (
     <div className='Calculator'>
-      <h2>BOARD VOLUME: {(weight * skill).toFixed(1) + 'L'}</h2>
-      <p>YOUR WEIGHT: {weight + 'kg'}</p>
+      <img src={surfboard} alt='surfboard' width='70px;' height='70px;'></img>
+      <div className='Calculator-details'>
+        <h2>BOARD VOLUME: {(weight * skill).toFixed(1) + 'L'}</h2>
+        <p>YOUR WEIGHT: {weight + 'kg'}</p>
+      </div>
       <RangeSlider value={weight} handler={handleWeight} />
       <SkillButton value='beginner' handler={handleButton} />
       <SkillButton value='intermediate' handler={handleButton} />
