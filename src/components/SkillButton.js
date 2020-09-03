@@ -4,7 +4,7 @@ const SkillButton = (props) => {
   return (
     <label>
       <input
-        className='button'
+        className='SkillButton'
         name='skill'
         type='radio'
         value={props.value}
