@@ -1,0 +1,6 @@
+.Calculator {
+  display: flex;
+  width: 500px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
