@@ -6,7 +6,7 @@ import './Calculator.css';
 
 function Calculator() {
   const [weight, setWeight] = useState(50);
-  const [gf, setGf] = useState('0.43');
+  const [guildFactor, setGuildFactor] = useState(0.43);
   const [skill, setSkill] = useState('Beginner');
   const beginner = 0.43;
   const intermediate = 0.38;
@@ -20,18 +20,18 @@ function Calculator() {
     let newSkill = event.target.value;
     setSkill(newSkill[0].toUpperCase() + newSkill.slice(1));
     if (event.target.value === 'beginner') {
-      setGf(beginner);
+      setGuildFactor(beginner);
     } else if (event.target.value === 'intermediate') {
-      setGf(intermediate);
+      setGuildFactor(intermediate);
     } else if (event.target.value === 'expert') {
-      setGf(expert);
+      setGuildFactor(expert);
     }
   };
 
   return (
     <div className='Calculator'>
       <div className='Calculator-details'>
-        <h2>BOARD VOLUME: {(weight * gf).toFixed(1) + 'L'}</h2>
+        <h2>BOARD VOLUME: {(weight * guildFactor).toFixed(1) + 'L'}</h2>
         <p>YOUR WEIGHT: {weight + 'kg'}</p>
         <p>YOUR SKILL: {skill}</p>
       </div>

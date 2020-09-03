@@ -8,6 +8,8 @@ const SkillButton = (props) => {
         name='skill'
         type='radio'
         value={props.value}
+        onClick={props.handler}
+        checked={true}
       ></input>
       {props.value.toUpperCase()}
     </label>
