@@ -11,13 +11,14 @@
 }
 .RangeSlider::-webkit-slider-thumb {
   -webkit-appearance: none;
-  appearance: none;
-  border-radius: 20%;
+  border-radius: 50%;
   height: 20px;
   width: 20px;
+  border: none;
   background: #3f4042;
   box-shadow: 20px 20px 60px #c5cbcf, -20px -20px 60px #ffffff;
   cursor: pointer;
+  transition: all 0.2s;
 }
 
 .RangeSlider::-moz-range-thumb {
@@ -31,7 +32,8 @@
   transition: all 0.2s;
 }
 
-.RangeSlider::-moz-range-thumb:hover {
+.RangeSlider::-moz-range-thumb:hover,
+.RangeSlider::-webkit-slider-thumb:hover {
   transform: scale(1.2);
   background: #53f0ce;
 }
