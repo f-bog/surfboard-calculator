@@ -32,7 +32,10 @@
   transition: all 0.2s;
 }
 
-.RangeSlider::-moz-range-thumb:hover,
+.RangeSlider::-moz-range-thumb:hover {
+  transform: scale(1.2);
+  background: #53f0ce;
+}
 .RangeSlider::-webkit-slider-thumb:hover {
   transform: scale(1.2);
   background: #53f0ce;

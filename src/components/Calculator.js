@@ -33,7 +33,7 @@ function Calculator() {
     <div className='Calculator'>
       <div className='Calculator-details'>
         <h2>BOARD VOLUME: {(weight * guildFactor).toFixed(1) + 'L'}</h2>
-        <p>YOUR WEIGHT: {weight + 'kg'}</p>
+        <h2>YOUR WEIGHT: {weight + 'kg'}</h2>
         <p>YOUR SKILL: {skill}</p>
       </div>
       <img src={surfboard} alt='surfboard' width='100px;' height='100px;'></img>
