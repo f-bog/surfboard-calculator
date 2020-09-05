@@ -19,7 +19,7 @@ label {
 }
 label:hover,
 .selected {
-  color: #53f0ce;
+  color: #a88a60;
   transition: color 0.2s;
 }
 

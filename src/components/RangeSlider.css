@@ -34,7 +34,7 @@
 
 .RangeSlider::-moz-range-thumb:hover {
   transform: scale(1.2);
-  background: #53f0ce;
+  background: #48d1b3;
 }
 .RangeSlider::-webkit-slider-thumb:hover {
   transform: scale(1.2);
